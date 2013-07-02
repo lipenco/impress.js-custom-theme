@@ -1,0 +1,94 @@
+<!doctype html>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Sans|Lato:400,900' rel='stylesheet' type='text/css'>
+
+    <link href="css/theme-impress.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+  
+  <div id="slide1" class="step slide" data-x="0" data-y="0" data-z="300" data-rotate-y="90"  data-scale="1" data-scale="8">
+          <p> Step 1 </p>
+  </div>
+
+
+   <div id="slide3" class="step slide" data-x="-300" data-y="300" data-z="300" data-rotate-x="90" data-rotate-y="180"  data-scale="1" data-scale="8">     
+        <p> Step 2 </p>
+   </div>
+
+ <div id="slide2" class="step slide" data-x="-300" data-y="0" data-z="600" data-rotate-y="180"  data-scale="1" data-scale="8">  
+         <p> Step 3 </p>
+   </div>
+
+  <div id="slide4" class="step slide" data-x="-600" data-y="0" data-z="300" data-rotate-x="90" data-rotate-y="270"  data-scale="1" data-scale="8">
+     <p> Step 4 </p>
+  </div>
+
+  <div id="slide6" class="step slide" data-x="-300" data-y="-300" data-z="300" data-rotate-x="90" data-rotate-y="360" data-rotate-z="90" data-scale="1" data-scale="8"> 
+   <p> Step 5 </p>
+  </div>
+  
+
+    <div id="slide7" class="step slide-circle" data-x="-1300" data-y="-1300" data-z="-600" data-rotate-y="90" data-scale="1">  
+         <p> Step 6 </p>
+   </div> 
+
+    <div id="slide8" class="step slide-circle" data-x="3000" data-y="-300" data-z="1800" data-rotate-y="180" data-scale="1">  
+         <p> Step 7 </p>
+   </div> 
+     <div id="slide9" class="step slide-circle" data-x="4000" data-y="-300" data-z="900" data-rotate-y="360" data-scale="1">  
+         <p> Step 8 </p>
+   </div> 
+
+    <div id="slide10" class="step slide-circle" data-x="3000" data-y="-300" data-z="0" data-rotate-y="90" data-scale="1">  
+         <p> Step 9 </p>
+   </div> 
+
+
+
+
+</div>
+
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
+
