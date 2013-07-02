@@ -46,7 +46,7 @@ table {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-image: url('/img/blank22.png');
+    background-image: url('../img/blank22.png');
     box-shadow: 
      -moz-box-shadow:    inset 0 0px 300px #888888;
     -webkit-box-shadow: inset 0 0px 300px #888888;
@@ -155,7 +155,7 @@ a:focus {
     border: 2px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
     box-shadow:  0 2px 6px rgba(0, 0, 0, .1);
-    background-image: url('/img/blank4.png');
+    background-image: url('../img/blank4.png');
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
     font-family: 'Habibi', Arial, sans-serif;
@@ -196,7 +196,7 @@ a:focus {
    -moz-border-radius: 100%; 
    -webkit-border-radius: 100%; 
    border-radius: 100%;
-   background: url('/img/blank4.png');
+   background: url('../img/blank4.png');
 }
 
 
