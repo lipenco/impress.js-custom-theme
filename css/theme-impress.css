@@ -23,19 +23,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body {
-    line-height: 1;
-}
+
 ol, ul {
     list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
 }
 
 table {
@@ -48,9 +38,10 @@ body {
     font-family: 'Lato', sans-serif;
     background-image: url('../img/blank22.png');
     box-shadow: 
-     -moz-box-shadow:    inset 0 0px 300px #888888;
+    -moz-box-shadow:    inset 0 0px 300px #888888;
     -webkit-box-shadow: inset 0 0px 300px #888888;
     box-shadow:         inset 0 0px 300px #888888;
+    text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 
@@ -59,13 +50,8 @@ i, em { font-style: italic }
 
 
 a {
-    color: inherit;
+    color: #ff7454;
     text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(255,255,255,0.5);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
-
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
     -ms-transition:     0.5s;
@@ -75,10 +61,108 @@ a {
 
 a:hover,
 a:focus {
-    background: rgba(255,255,255,1);
+    color: #ff3607;
     text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, li {
+  font-family: 'Lato', serif;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  letter-spacing: -1px;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: #525252;
+    text-shadow: 0 2px 2px #787878;
+    padding: 25px;
+}
+
+h2 {
+    font-size: 3em;
+    color: #525252;
+    text-shadow: 0 1px 1px #787878;
+    padding: 25px;
+}
+
+
+h3 {
+    font-size: 2.3em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.7em;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+ol, ul {
+    counter-reset:li; 
+    margin-left:5%;
+    padding-left:0; 
+}
+ol > li, ul > li {
+    position:relative; 
+    margin:7% 2em 0 3em; 
+    padding:8px 8px; 
+    list-style:none; 
+    border-top:2px dashed #666;
+    font-size: 1.7em;
+    text-align: left;   
+}
+
+ol > li:before {
+    content:counter(li); 
+    counter-increment:li;
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    margin-right:8px;
+    padding:4px;
+    padding-top: 8px;
+    border-top:2px dashed #666;
+    border-right:2px dashed #666;
+    font-weight:bold;
+    text-align:center;
+}
+
+ul > li:before {
+    content: "\0BB \020";
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    margin-right:8px;
+    padding:4px;
+    border-top:2px dashed #666;
+    font-weight:bold;
+    text-align:center;
+}
+
+li ol,
+li ul {margin-top:10px;}
+ol ol li:last-child {margin-bottom:0;}
 
 
 .fallback-message {
@@ -117,15 +201,9 @@ a:focus {
     box-sizing:         border-box;
 
     font-family: 'Lato', georgia, serif;
-    font-size: 48px;
-    line-height: 1.5;
 }
 
-/*
-    ... and we enhance the styles for impress.js.
 
-    Basically we remove the margin and make inactive steps a little bit transparent.
-*/
 .impress-enabled .step {
     margin: 0;
     opacity: 0.3;
@@ -139,60 +217,24 @@ a:focus {
 
 .impress-enabled .step.active { opacity: 1 }
 
-/*
-    These 'slide' step styles were heavily inspired by HTML5 Slides:
-    http://html5slides.googlecode.com/svn/trunk/styles.css
 
-    ;)
-
-    They cover everything what you see on first three steps of the demo.
-*/
 .slide {
     display: block;
     width: 600px;
     height: 600px;
-    padding: 40px;
     border: 2px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
+    padding: 40px;
     box-shadow:  0 2px 6px rgba(0, 0, 0, .1);
-    background-image: url('../img/blank4.png');
-    color: rgb(102, 102, 102);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-    font-family: 'Habibi', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -1px;
-}
-
-/*.slide:nth-of-type(1) {
-    background-image: url('/img/blank4.png');
- } 
-
-.slide:nth-of-type(2) {
-    background-image: url('/img/tlo4.png');
- }
-
-.slide:nth-of-type(3) {
-    background-image: url('/img/blank111.png');
- }
-*/
-.slide q {
-    display: block;
-    font-size: 50px;
-    line-height: 72px;
-
-    margin-top: 100px;
-}
-
-.slide q strong {
-    white-space: nowrap;
+    background-image: url('../img/blank5.png');
+   
 }
 
 
 .slide-circle { 
    width: 700px;
    height: 700px;
-   background: red; 
+   padding: 110px;
    -moz-border-radius: 100%; 
    -webkit-border-radius: 100%; 
    border-radius: 100%;
@@ -202,19 +244,16 @@ a:focus {
 
 
 
-/*
-    Now we 'enable' the hint when presentation is initialized ...
-*/
+
+
+
+
+
 .impress-enabled .hint { display: block }
 
-/*
-    ... and we will show it when the first step (with id 'bored') is active.
-*/
+
 .impress-on-bored .hint {
-    /*
-        We remove the transparency and position the hint in its default fixed
-        position.
-    */
+ 
     opacity: 1;
 
     -webkit-transform: translateY(0px);
@@ -223,14 +262,6 @@ a:focus {
     -o-transform:      translateY(0px);
     transform:         translateY(0px);
 
-    /*
-        Now for fade in transition we have the oposite situation from the one
-        above.
-
-        First after 4.5s delay we animate the transform property to move the hint
-        into its correct position and after that we fade it in with opacity
-        transition.
-    */
     -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
     -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
     -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
