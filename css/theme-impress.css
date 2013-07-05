@@ -36,7 +36,7 @@ table {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-image: url('../img/blank22.png');
+    background-image: url('../img/blank222.png');
     box-shadow: 
     -moz-box-shadow:    inset 0 0px 300px #888888;
     -webkit-box-shadow: inset 0 0px 300px #888888;
@@ -57,12 +57,13 @@ a {
     -ms-transition:     0.5s;
     -o-transition:      0.5s;
     transition:         0.5s;
+    cursor:pointer;
 }
 
 a:hover,
 a:focus {
-    color: #ff3607;
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+color: #ff3607;
+text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
 
 
@@ -79,13 +80,14 @@ p, li {
   color: rgb(102, 102, 102);
   text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
   letter-spacing: -1px;
+  padding: 3%;
 }
 
 h1 {
     font-size: 4.5em;
     color: #525252;
     text-shadow: 0 2px 2px #787878;
-    padding: 25px;
+    margin: 15% auto;
 }
 
 h2 {
@@ -165,6 +167,51 @@ li ul {margin-top:10px;}
 ol ol li:last-child {margin-bottom:0;}
 
 
+blockquote {
+font-size: 1.8em;
+font-style: italic;
+width: 80%;
+margin: 0.25em 0;
+padding: 7% 0 0 15%;
+line-height: 1.9em;
+position: relative;
+color: #383838;
+}
+
+blockquote:before {
+font-family: 'Source Sans Pro';
+display: block;
+content: "\201C";
+font-size: 6em;
+position: absolute;
+left: -3%;
+top: 10%;
+color: #7a7a7a;
+}
+
+blockquote cite {
+color: #999999;
+font-size: 1em;
+display: block;
+margin-top: 10px;
+text-align: right;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+img {
+-webkit-box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+    -moz-box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+    box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 10% 23%;
+}
+
+
 .fallback-message {
     font-family: 'Lato';
     line-height: 1.3;
@@ -226,7 +273,7 @@ ol ol li:last-child {margin-bottom:0;}
     border-radius: 10px;
     padding: 40px;
     box-shadow:  0 2px 6px rgba(0, 0, 0, .1);
-    background-image: url('../img/blank5.png');
+    background-image: url('../img/blank55.png');
    
 }
 
@@ -238,7 +285,7 @@ ol ol li:last-child {margin-bottom:0;}
    -moz-border-radius: 100%; 
    -webkit-border-radius: 100%; 
    border-radius: 100%;
-   background: url('../img/blank4.png');
+   background: url('../img/blank44.png');
 }
 
 
