@@ -266,7 +266,7 @@ box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 
     display: block;
     width: 600px;
     height: 600px;
-    border: 2px solid rgba(0, 0, 0, .3);
+    border: 2px dashed rgba(0, 0, 0, .3);
     border-radius: 10px;
     padding: 40px;
     box-shadow:  0 2px 6px rgba(0, 0, 0, .1);
@@ -283,6 +283,7 @@ box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 
    -webkit-border-radius: 100%; 
    border-radius: 100%;
    background: url('../img/blank44.png');
+   border: 2px dashed rgba(0, 0, 0, .3);
 }
 
 
