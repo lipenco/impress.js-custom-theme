@@ -203,8 +203,8 @@ content: "\2014 \2009";
 
 img {
 -webkit-box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
-    -moz-box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
-    box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+-moz-box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -240,21 +240,18 @@ img {
     width: 900px;
     padding: 40px;
     margin: 20px auto;
-    
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
     -ms-box-sizing:     border-box;
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
-
     font-family: 'Lato', georgia, serif;
 }
 
 
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
-
+    opacity: 0.2;
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
     -ms-transition:     opacity 1s;
