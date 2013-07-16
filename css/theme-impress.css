@@ -80,23 +80,22 @@ p, li {
   color: rgb(102, 102, 102);
   text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
   letter-spacing: -1px;
-  padding: 3%;
+  padding: 1em;
 }
 
 h1 {
     font-size: 4.5em;
     color: #525252;
     text-shadow: 0 2px 2px #787878;
-    margin: 15% auto;
+    margin: auto;
 }
 
 h2 {
     font-size: 3em;
     color: #525252;
     text-shadow: 0 1px 1px #787878;
-    padding: 25px;
+    padding: 0.5em;
 }
-
 
 h3 {
     font-size: 2.3em;
@@ -168,37 +167,37 @@ ol ol li:last-child {margin-bottom:0;}
 
 
 blockquote {
-font-size: 1.8em;
-font-style: italic;
-width: 80%;
-margin: 0.25em 0;
-padding: 7% 0 0 15%;
-line-height: 1.9em;
-position: relative;
-color: #383838;
+    font-size: 1.8em;
+    font-style: italic;
+    width: 80%;
+    margin: 0.25em 0;
+    padding: 7% 0 0 15%;
+    line-height: 1.9em;
+    position: relative;
+    color: #383838;
 }
 
 blockquote:before {
-font-family: 'Source Sans Pro';
-display: block;
-content: "\201C";
-font-size: 6em;
-position: absolute;
-left: -3%;
-top: 10%;
-color: #7a7a7a;
+    font-family: 'Source Sans Pro';
+    display: block;
+    content: "\201C";
+    font-size: 6em;
+    position: absolute;
+    left: -3%;
+    top: 10%;
+    color: #7a7a7a;
 }
 
 blockquote cite {
-color: #999999;
-font-size: 0.8em;
-display: block;
-margin-top: 3px;
-text-align: right;
+    color: #999999;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 3px;
+    text-align: right;
 }
  
 blockquote cite:before {
-content: "\2014 \2009";
+    content: "\2014 \2009";
 }
 
 img {
@@ -208,31 +207,9 @@ box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    margin: 10% 23%;
+    display: block;
+    margin: auto;
 }
-
-
-.fallback-message {
-    font-family: 'Lato';
-    line-height: 1.3;
-
-    width: 780px;
-    padding: 10px 10px 0;
-    margin: 20px auto;
-
-    border: 1px solid #E4C652;
-    border-radius: 10px;
-    background: #EEDC94;
-}
-
-.fallback-message p {
-    margin-bottom: 10px;
-}
-
-.impress-supported .fallback-message {
-    display: none;
-}
-
 
 
 .step {
@@ -289,11 +266,6 @@ box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 
 
 
 
-
-
-
-
-
 .impress-enabled .hint { display: block }
 
 
@@ -315,7 +287,7 @@ box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 
 }
 
 
-*/
+
 .impress-enabled          { pointer-events: none }
 .impress-enabled #impress { pointer-events: auto }
 
